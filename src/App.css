@@ -1,9 +1,12 @@
 .home-container {
+  background-image: url('assets/Homepage.png');
+background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #74ebd5, #acb6e5);
 }
 
 .custom-card {
@@ -21,6 +24,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: transparent;
 
   display: flex;
   align-items: center;
