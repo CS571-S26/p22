@@ -1,5 +1,5 @@
 import '../App.css'
-import { Button, Card } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 
 export default function HomePage() {
@@ -12,21 +12,19 @@ export default function HomePage() {
           <h1 className="mb-4 text-primary">Welcome</h1>
 
           <div className="d-flex flex-column align-items-center gap-3">
-            <Button
+            <button
               className="menu-button"
-              variant="secondary"
               onClick={() => navigate('/about')}
             >
               About
-            </Button>
+            </button>
 
-            <Button
+            <button
               className="menu-button"
-              variant="outline-dark"
               onClick={() => navigate('/artwork')}
             >
               Art Gallery
-            </Button>
+            </button>
           </div>
         </Card.Body>
       </Card>
