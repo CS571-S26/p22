@@ -1,0 +1,21 @@
+.home-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+}
+
+.custom-card {
+  padding: 2rem;
+  border-radius: 20px;
+  width: 600px;
+  background: white;
+}
+
+.menu-button {
+  width: 520px;
+  height: 63px;
+  font-weight: 500;
+  border-radius: 10px;
+}

@@ -1,16 +1,33 @@
-import { useState } from 'react'
 import '../App.css'
 import { Button, Card } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
 
 export default function HomePage() {
-  const [count, setCount] = useState(0)
+  const navigate = useNavigate()
 
   return (
-    <div className="w-100 h-100 d-flex justify-content-center align-items-center">
-      <Card className='m-4 p-2'>
-        <Card.Body className='text-center'>
-          <h1>Hello World!</h1>
-          <Button onClick={() => setCount(o => o + 1)}>Count: {count}</Button>
+    <div className="home-container">
+      <Card className="custom-card shadow-lg">
+        <Card.Body className="text-center">
+          <h1 className="mb-4 text-primary">Welcome</h1>
+
+          <div className="d-flex flex-column align-items-center gap-3">
+            <Button
+              className="menu-button"
+              variant="secondary"
+              onClick={() => navigate('/about')}
+            >
+              About
+            </Button>
+
+            <Button
+              className="menu-button"
+              variant="outline-dark"
+              onClick={() => navigate('/artwork')}
+            >
+              Art Gallery
+            </Button>
+          </div>
         </Card.Body>
       </Card>
     </div>

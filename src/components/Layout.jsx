@@ -6,10 +6,9 @@ export default function Layout() {
     <div>
       <nav className="m-3">
         <Link to="/" className="me-3">Home</Link>
-        <Link to="/about/">About</Link>
-        <Link to="/artwork" className="ms-3">Artwork</Link>
+        <Link to="/about" className="ms-3">About</Link>
+        <Link to="/artwork" className="ms-3">Art Gallery</Link>
       </nav>
-
       <main>
         <Outlet />
       </main>
