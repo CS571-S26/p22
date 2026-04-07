@@ -5,6 +5,7 @@ import AboutPage from './pages/AboutPage.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
 import ArtworkPage from './pages/Artwork.jsx'
 import Layout from './components/Layout.jsx'
+import ProjectPage from './pages/ProjectPage'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
+        <Route path="projects" element={<ProjectPage />} />
         <Route path="artwork" element={<ArtworkPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
