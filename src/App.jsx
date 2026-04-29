@@ -6,6 +6,7 @@ import NotFoundPage from './pages/NotFoundPage.jsx'
 import ArtworkPage from './pages/Artwork.jsx'
 import Layout from './components/Layout.jsx'
 import ProjectPage from './pages/ProjectPage'
+import ProjectDetailPage from './pages/ProjectDetailPage'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="projects" element={<ProjectPage />} />
+        <Route path="/projects/:id" element={<ProjectDetailPage />} />
         <Route path="artwork" element={<ArtworkPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
