@@ -19,8 +19,8 @@ export default function HomePage() {
           variants={containerVariants}
         >
           <MenuButton
-            text="Project Portfolio"
-            onClick={() => navigate('/projects')}
+            text="About Me"
+            onClick={() => navigate('/about')}
             variants={buttonVariants}
           />
 
@@ -31,10 +31,11 @@ export default function HomePage() {
           />
 
           <MenuButton
-            text="About"
-            onClick={() => navigate('/about')}
+            text="Project Portfolio"
+            onClick={() => navigate('/projects')}
             variants={buttonVariants}
           />
+
         </motion.div>
       </Card.Body>
     </div>
