@@ -1,6 +1,8 @@
 import '../App.css'
-import { Card } from 'react-bootstrap'
 import bg from '../assets/Page.png'
+
+import AboutSection from '../components/AboutSection'
+import AboutText from '../components/AboutText'
 
 export default function AboutPage() {
   return (
@@ -11,35 +13,45 @@ export default function AboutPage() {
       <div className="about-card">
         <h1 className="about-title">About Me</h1>
 
-        <p className="about-text">
+        <AboutText>
           Hi! I’m Annabelle Kim, a student at UW-Madison who is passionate about game development, design, and building creative digital experiences.
-        </p>
+        </AboutText>
 
-        <p className="about-text">
+        <AboutText>
           This website is dedicated towards my projects, artwork, and other accomplishments to display my skills and interests in a fun and interactive way.
-        </p>
+        </AboutText>
 
-        <p className="about-text">
+        <AboutText>
           This will include game design projects, digital art, sprites, and more! I hope you enjoy exploring my portfolio and learning more about me.
-        </p>
+        </AboutText>
 
-        <div className="about-section">
-          <h3>Recent Projects</h3>
+        <AboutSection title="Recent Projects">
           <ul>
-            <li>Strung Along (Game Jame Submission)</li>
+            <li>Strung Along (Game Jam Submission)</li>
             <li>Personal Website Design</li>
             <li>Into the Pit (Game Design Project)</li>
           </ul>
-        </div>
+        </AboutSection>
 
-        <div className="about-section">
-          <h3>Links</h3>
+        <AboutSection title="Links">
           <ul>
-            <li ><a href="https://www.linkedin.com/in/annabelle-kim-7b9620382/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-            <li><a href="https://itch.io/profile/wucke" target="_blank" rel="noopener noreferrer">Itchio</a></li>
-            <li><a href="https://www.artstation.com/wuckeee8" target="_blank" rel="noopener noreferrer">Artstation</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/annabelle-kim-7b9620382/" target="_blank" rel="noopener noreferrer">
+                Linkedin
+              </a>
+            </li>
+            <li>
+              <a href="https://itch.io/profile/wucke" target="_blank" rel="noopener noreferrer">
+                Itchio
+              </a>
+            </li>
+            <li>
+              <a href="https://www.artstation.com/wuckeee8" target="_blank" rel="noopener noreferrer">
+                Artstation
+              </a>
+            </li>
           </ul>
-        </div>
+        </AboutSection>
       </div>
     </div>
   )

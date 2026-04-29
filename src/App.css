@@ -135,8 +135,7 @@ background-size: cover;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   overflow: hidden;
-  backdrop-filter: blur(6px);
-  transition: transform 0.2s ease;
+  will-change: transform;
 }
 
 .gallery-item img {
@@ -152,4 +151,21 @@ background-size: cover;
 .loading-text {
   color: white;
   margin: 2rem;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+.overlay-img {
+  max-width: 80%;
+  max-height: 80%;
 }
