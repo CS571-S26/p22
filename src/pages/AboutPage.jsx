@@ -3,6 +3,7 @@ import bg from '../assets/Page.png'
 
 import AboutSection from '../components/AboutSection'
 import AboutText from '../components/AboutText'
+import sprite from '../assets/Karmila.PNG'
 
 export default function AboutPage() {
   return (
@@ -24,7 +25,7 @@ export default function AboutPage() {
         <AboutText>
           This will include game design projects, digital art, sprites, and more! I hope you enjoy exploring my portfolio and learning more about me.
         </AboutText>
-
+        <img src={sprite} className="about-sprite" />
         <AboutSection title="Recent Projects">
           <ul>
             <li>Strung Along (Game Jam Submission)</li>

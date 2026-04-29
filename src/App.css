@@ -119,6 +119,26 @@ background-size: cover;
   margin-bottom: 0.3rem;
 }
 
+.about-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.about-text-block {
+  flex: 1;
+}
+
+.about-sprite {
+  width: 80px;
+  height: auto;
+
+  image-rendering: pixelated;
+
+  opacity: 0.9;
+}
+
 .gallery-container {
   width: 90%;
   max-width: 1000px;
