@@ -11,7 +11,7 @@ export default function ProjectDetailPage() {
       title: "Strung Along",
       subtitle: "Game Jam Submission",
       image: "https://picsum.photos/800/400?1",
-      tech: ["Unity", "C#", "Game Design"],
+      tech: ["Godot", "GDScript", "Game Design", "Pixsquare"],
       description:
         "A puzzle-based game created during a game jam. Focused on mechanics and player experimentation.",
       details:
@@ -31,7 +31,7 @@ export default function ProjectDetailPage() {
       title: "Into the Pit",
       subtitle: "Game Design Project",
       image: "https://picsum.photos/800/400?3",
-      tech: ["Unity", "Narrative Design"],
+      tech: ["Godot", "GDScript", "Game Design", "Pixsquare", "Narrative Design"],
       description:
         "A narrative-driven experience focused on atmosphere and immersion.",
       details:

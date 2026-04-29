@@ -3,7 +3,7 @@ import '../App.css'
 
 export default function Layout() {
   return (
-    <div className="app-layout bg-main">   {/* 👈 ADD bg-main */}
+    <div className="app-layout bg-main">
 
       <nav className="sidebar">
         <h2 className="sidebar-title">Menu</h2>

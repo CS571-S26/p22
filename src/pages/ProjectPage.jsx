@@ -2,26 +2,29 @@ import '../App.css'
 import bg from '../assets/Page.png'
 import ProjectCard from '../components/ProjectCard'
 import PageWrapper from '../components/PageWrapper'
+import proj1 from '../assets/ArtworkSA.png'
+import proj2 from '../assets/Homepage.png'
+import proj3 from '../assets/ArtworkITP1.png'
 
 export default function ProjectPage() {
   const projects = [
     {
       id: "strung-along",
       title: "Strung Along",
-      description: "A game jam submission focused on puzzle mechanics.",
-      image: "https://picsum.photos/400/300?1"
+      description: "A game jam submission focused on indegenous aspects and problem solving with another teammate.",
+      image: proj1
     },
     {
       id: "website",
       title: "Personal Website",
-      description: "A portfolio site showcasing my work.",
-      image: "https://picsum.photos/400/300?2"
+      description: "A portfolio site showcasing my work (it's actually this project!)",
+      image: proj2
     },
     {
       id: "into-the-pit",
       title: "Into the Pit",
-      description: "A game design project exploring storytelling.",
-      image: "https://picsum.photos/400/300?3"
+      description: "A Metroidvania game design project exploring storytelling, immersive characters, familiar mechanics and more.",
+      image: proj3
     }
   ]
 
