@@ -3,16 +3,23 @@ import '../App.css'
 
 export default function Layout() {
   return (
-    <div>
-      <nav className="m-3">
-        <Link to="/" className="me-3">Home</Link>
-        <Link to="/about" className="ms-3">About</Link>
-        <Link to="/artwork" className="ms-3">Art Gallery</Link>
-        <Link to="/projects" className="ms-3">Project Portfolio</Link>
+    <div className="app-layout">
+      
+
+      <nav className="sidebar">
+        <h2 className="sidebar-title">Menu</h2>
+
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/artwork">Art Gallery</Link>
+        <Link to="/projects">Projects</Link>
       </nav>
-      <main>
+
+
+      <main className="main-content">
         <Outlet />
       </main>
+
     </div>
   )
 }

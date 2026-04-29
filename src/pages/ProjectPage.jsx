@@ -30,7 +30,13 @@ export default function ProjectPage() {
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="project-container">
-        <h1 className="project-title">Projects</h1>
+        <h1 className="project-title">Current Projects</h1>
+
+        <p className="project-description-text">
+          Here are some of the projects I’ve been working on recently, including game design,
+          web dev, and other creative projects. Click on any project to learn
+          more about the process, tools, and ideas behind it.
+        </p>
 
         <div className="project-grid">
           {projects.map(p => (
