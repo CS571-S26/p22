@@ -2,6 +2,7 @@ import '../App.css'
 import { Card } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 import { motion } from "framer-motion"
+import PageWrapper from '../components/PageWrapper'
 
 import MenuButton from '../components/MenuButton'
 import { containerVariants, buttonVariants } from '../components/menuVariants'
@@ -10,6 +11,7 @@ export default function HomePage() {
   const navigate = useNavigate()
 
   return (
+    <PageWrapper>
     <div className="home-container">
       <Card.Body className="text-center">
         <motion.div
@@ -39,5 +41,6 @@ export default function HomePage() {
         </motion.div>
       </Card.Body>
     </div>
+    </PageWrapper>
   )
 }

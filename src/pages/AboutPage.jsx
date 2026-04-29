@@ -4,10 +4,12 @@ import bg from '../assets/Page.png'
 import AboutSection from '../components/AboutSection'
 import AboutText from '../components/AboutText'
 import sprite from '../assets/Karmila.PNG'
+import PageWrapper from '../components/PageWrapper'
 
 export default function AboutPage() {
   return (
-    <div
+    <PageWrapper>
+      <div
       className="page-container"
       style={{ backgroundImage: `url(${bg})` }}
     >
@@ -55,5 +57,6 @@ export default function AboutPage() {
         </AboutSection>
       </div>
     </div>
+    </PageWrapper>
   )
 }

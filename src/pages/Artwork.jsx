@@ -1,7 +1,7 @@
 import '../App.css'
 import bg from '../assets/Page.png'
 import ArtItem from '../components/ArtItem'
-
+import PageWrapper from '../components/PageWrapper'
 import art1 from '../assets/Artwork1.png'
 import art2 from '../assets/Artwork2.png'
 import art3 from '../assets/Artwork3.png'
@@ -38,6 +38,7 @@ export default function ArtworkPage() {
   ]
 
   return (
+    <PageWrapper>
     <div
       className="page-container"
       style={{ backgroundImage: `url(${bg})` }}
@@ -59,5 +60,6 @@ export default function ArtworkPage() {
         </div>
       </div>
     </div>
+    </PageWrapper>
   )
 }

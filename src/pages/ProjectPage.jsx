@@ -1,6 +1,7 @@
 import '../App.css'
 import bg from '../assets/Page.png'
 import ProjectCard from '../components/ProjectCard'
+import PageWrapper from '../components/PageWrapper'
 
 export default function ProjectPage() {
   const projects = [
@@ -25,6 +26,7 @@ export default function ProjectPage() {
   ]
 
   return (
+    <PageWrapper>
     <div
       className="page-container"
       style={{ backgroundImage: `url(${bg})` }}
@@ -45,5 +47,6 @@ export default function ProjectPage() {
         </div>
       </div>
     </div>
+    </PageWrapper>
   )
 }
