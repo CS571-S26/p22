@@ -8,6 +8,18 @@ import sa1 from '../assets/SAImg1.png'
 import sa2 from '../assets/SAImg2.png'
 import sa3 from '../assets/SAImg3.png'
 import sa4 from '../assets/SAImg4.png'
+import websiteimg from '../assets/Homepage.png'
+import itp1 from '../assets/ArtworkITP1.png'
+import itp2 from '../assets/Hero.png'
+import itp3 from '../assets/Elm.png'
+import itp4 from '../assets/Mavia.png'
+import itp5 from '../assets/Mycelia.png'
+import itp6 from '../assets/Karmila.png'
+import itp7 from '../assets/ITPImg1.png'
+import itp8 from '../assets/ITPImg2.png'
+import itp9 from '../assets/ITPImg3.png'
+import itp10 from '../assets/ITPImg4.png'
+
 
 const projectData = {
   "strung-along": {
@@ -16,9 +28,7 @@ const projectData = {
     link: "https://wucke.itch.io/strung-along",
     image: proj1MI,
     images: [sa1, sa2, sa3, sa4],
-
     tech: ["Godot", "GDScript", "Game Design", "Pixsquare"],
-
     description:
       "A puzzle-based game created during a game jam. Focused on mechanics and player experimentation. Additionally, the game represents the indigenous themes (Nahua-Pipil.)",
 
@@ -29,23 +39,24 @@ const projectData = {
   "website": {
     title: "Personal Website",
     subtitle: "Portfolio Project",
-    image: "https://picsum.photos/800/400?2",
+    image: websiteimg,
     tech: ["React", "CSS", "Framer Motion"],
     description:
-      "A responsive portfolio website showcasing my projects and artwork.",
+      "You're looking at it :)! Explore and have fun!",
     details:
-      "Built using React with reusable components and animation to create a modern, interactive UI."
+      "Built using React with reusable components and animation to create a modern, interactive UI with my own style."
   },
 
   "into-the-pit": {
     title: "Into the Pit",
     subtitle: "Game Design Project",
-    image: "https://picsum.photos/800/400?3",
+    image: itp1,
+    images: [itp2, itp3, itp4, itp5, itp6, itp7, itp8, itp9, itp10],
     tech: ["Godot", "GDScript", "Game Design", "Pixsquare", "Narrative Design"],
     description:
-      "A narrative-driven experience focused on atmosphere and immersion.",
+      "A fantasty, medieval, Metroidvania video game in the works. It is a narrative-driven experience focused on atmosphere and immersion.",
     details:
-      "This project explores storytelling through environment and pacing."
+      "You follow the main character, Lunae, into a mysterious town known for their infamous pit fights. You're hoping to experience this for yourself in order to win some cash due to your financial situation. You participate in this tournament like style fight that traverses in the underground world. As you explore, you find secrets about the townfolk, mysterious cave rot, and more."
   }
 }
 

@@ -1,6 +1,6 @@
 import '../App.css'
 import bg from '../assets/Page.png'
-
+import { Link } from 'react-router-dom'
 import AboutSection from '../components/AboutSection'
 import AboutText from '../components/AboutText'
 import sprite from '../assets/Karmila.PNG'
@@ -30,9 +30,23 @@ export default function AboutPage() {
         <img src={sprite} className="about-sprite" />
         <AboutSection title="Recent Projects">
           <ul>
-            <li>Strung Along (Game Jam Submission)</li>
-            <li>Personal Website Design</li>
-            <li>Into the Pit (Game Design Project)</li>
+            <li>
+              <Link to="/projects/strung-along">
+                Strung Along (Game Jam Submission)
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/projects/website">
+                Personal Website Design
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/projects/into-the-pit">
+                Into the Pit (Game Design Project)
+              </Link>
+            </li>
           </ul>
         </AboutSection>
 

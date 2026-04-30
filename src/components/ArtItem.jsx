@@ -1,12 +1,12 @@
 import { useState } from 'react'
 
-export default function ArtItem({ src }) {
+export default function ArtItem({ src, alt }) {
   const [expanded, setExpanded] = useState(false)
 
   return (
     <>
       <div className="gallery-item" onClick={() => setExpanded(true)}>
-        <img src={src} alt="art" />
+        <img src={src} alt={alt} />
       </div>
 
       {expanded && (

@@ -20,21 +20,21 @@ import art15 from '../assets/Artwork15.png'
 
 export default function ArtworkPage() {
   const images = [
-    { id: 1, src: art1 },
-    { id: 2, src: art2 },
-    { id: 3, src: art3 },
-    { id: 4, src: art4 },
-    { id: 5, src: art5 },
-    { id: 6, src: art6 },
-    { id: 7, src: art7 },
-    { id: 8, src: art8 },
-    { id: 9, src: art9 },
-    { id: 10, src: art10 },
-    { id: 11, src: art11 },
-    { id: 12, src: art12 },
-    { id: 13, src: art13 },
-    { id: 14, src: art14 },
-    { id: 15, src: art15 },
+    { id: 1, src: art1, alt: "Queen & Wolves" },
+    { id: 2, src: art2, alt: "Forest Sprite Latest Design" },
+    { id: 3, src: art3, alt : "The Queen" },
+    { id: 4, src: art4, alt : "Reze FanArt"},
+    { id: 5, src: art5, alt : "Evernight"},
+    { id: 6, src: art6, alt : "Untitled" },
+    { id: 7, src: art7, alt : "Vampire Duchess"},
+    { id: 8, src: art8, alt : "Lost in Space"},
+    { id: 9, src: art9, alt : "Pitfight WIP" },
+    { id: 10, src: art10, alt : "DnD Character" },
+    { id: 11, src: art11, alt : "DnD Character 2" },
+    { id: 12, src: art12, alt : "DnD Character 3" },
+    { id: 13, src: art13, alt : "Infested Body"},
+    { id: 14, src: art14, alt : "Train Ride Home" },
+    { id: 15, src: art15, alt : "Untitled 2" },
   ]
 
   return (
@@ -55,7 +55,7 @@ export default function ArtworkPage() {
         </p>
         <div className="gallery-grid">
           {images.map(img => (
-            <ArtItem key={img.id} src={img.src} />
+            <ArtItem key={img.id} src={img.src} alt={img.alt} />
           ))}
         </div>
       </div>
